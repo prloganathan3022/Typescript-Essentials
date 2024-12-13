@@ -1,5 +1,7 @@
+import { RequestsMock } from "./requestmock.interface";
+
 export interface Handlers {
-  next?: (value: any) => void;
-  error?: (value: any) => void;
+  next?: (value: RequestsMock) => void;
+  error?: (value: unknown) => void;
   complete?: () => void;
 }
