@@ -35,7 +35,7 @@ const requestsMock: RequestsMock[] = [
 ];
 
 const handleRequest = (request: RequestsMock) => HTTP_STATUS_OK;
-const handleError = (error: any) => HTTP_STATUS_INTERNAL_SERVER_ERROR;
+const handleError = (error: unknown) => HTTP_STATUS_INTERNAL_SERVER_ERROR;
 
 const handleComplete = (): void => console.log('complete');
 
